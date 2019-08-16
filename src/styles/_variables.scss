@@ -1,0 +1,17 @@
+$primary-color: #54b89d;
+$secondary-color: #303d4f;
+$tertiary-color: #ffffff;
+$text-contrast: #ffffff;
+
+@mixin flexible ($display, $justify, $align, $direction, $wrap) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+  flex-wrap: $wrap;
+}
+
+@mixin widthAndHeight ($width, $height) {
+  width: $width;
+  height: $height;
+}

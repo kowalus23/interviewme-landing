@@ -1,0 +1,26 @@
+@import '../variables';
+
+.section-navigation {
+  @include widthAndHeight(100%, null);
+  background-color: $secondary-color;
+
+  &__content {
+    @include flexible(flex, space-between, center, null, null);
+
+    &__title {
+      margin: auto 0;
+      padding: 1em;
+      color: $text-contrast;
+    }
+
+    &__sections {
+      @include flexible(flex, null, null, null, null);
+      list-style: none;
+      color: $text-contrast;
+
+      li {
+        padding: 0.5em 1em;
+      }
+    }
+  }
+}
