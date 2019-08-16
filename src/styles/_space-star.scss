@@ -1,11 +1,3 @@
-.star-wrapper {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .star-content {
   position: relative;
   height: 40px;
@@ -24,7 +16,7 @@
     margin-right: 0.9em;
     margin-bottom: 1.2em;
     border-right: 0.3em solid transparent;
-    border-bottom: 0.7em solid #00e5af;
+    border-bottom: 0.7em solid $text-contrast;
     border-left: 0.3em solid transparent;
     font-size: 24px;
 
@@ -37,7 +29,7 @@
       top: 0.6em;
       left: -1em;
       border-right: 1em solid transparent;
-      border-bottom: 0.7em solid #00e5af;
+      border-bottom: 0.7em solid $text-contrast;
       border-left: 1em solid transparent;
       transform: rotate(-35deg);
     }
@@ -55,7 +47,7 @@
     right: -180px;
     width: 160px;
     height: 6px;
-    background-color: #00e5af;
+    background-color: $text-contrast;
   }
 
   &::before {
@@ -65,7 +57,7 @@
     left: -180px;
     width: 160px;
     height: 6px;
-    background-color: #00e5af;
+    background-color: $text-contrast;
   }
 }
 
