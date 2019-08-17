@@ -1,0 +1,18 @@
+@import "../variables";
+@import "../space-star";
+
+.about {
+  @include widthAndHeight(100%, 700px);
+  background-color: $primary-color;
+
+  &__content {
+    @include flexible(flex, center, center, column, null);
+    @include widthAndHeight(null, 100%);
+
+    &__title {
+      margin: 0;
+      padding: 1em;
+      color: $text-contrast;
+    }
+  }
+}

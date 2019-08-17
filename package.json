@@ -30,6 +30,7 @@
     ]
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.10.1",
     "react-dev-utils": "^9.0.3"
   }
 }

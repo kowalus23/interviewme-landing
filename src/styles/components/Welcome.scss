@@ -1,13 +1,19 @@
 @import "../variables";
 @import "../space-star";
 
-.section-welcome {
+.welcome {
   @include widthAndHeight(100%, 700px);
   background-color: $primary-color;
 
   &__content {
     @include flexible(flex, center, center, column, null);
     @include widthAndHeight(null, 100%);
+
+    &__avatar {
+      @include widthAndHeight(200px, 200px);
+      background-color: $secondary-color;
+      border-radius: 50%;
+    }
 
     &__title {
       margin: 0;

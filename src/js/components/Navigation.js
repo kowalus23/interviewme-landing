@@ -9,11 +9,11 @@ const Navigation = ({info}) => {
 
   return (
     <>
-      <section className="section-navigation">
+      <section className="navigation">
         <div className="container">
-          <div className="section-navigation__content">
-            <h2 className="section-navigation__content__title">{title.toUpperCase()}</h2>
-            <ul className="section-navigation__content__sections">
+          <div className="navigation__content">
+            <h2 className="navigation__content__title">{title.toUpperCase()}</h2>
+            <ul className="navigation__content__sections">
               {section}
             </ul>
           </div>

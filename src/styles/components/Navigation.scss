@@ -1,6 +1,6 @@
 @import '../variables';
 
-.section-navigation {
+.navigation {
   @include widthAndHeight(100%, null);
   background-color: $secondary-color;
 

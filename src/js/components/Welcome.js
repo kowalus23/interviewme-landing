@@ -7,16 +7,17 @@ const Welcome = ({info}) => {
 
   return (
     <>
-      <section className="section-welcome">
+      <section className="welcome">
         <div className="container">
-          <div className="section-welcome__content">
-            <h2 className="section-welcome__content__title">
-              {title}
-            </h2>
+          <div className="welcome__content">
+            <div className="welcome__content__avatar"/>
+            <h1 className="welcome__content__title">
+              {title.toUpperCase()}
+            </h1>
             <div className="star-content">
               <div className="star-content__star"/>
             </div>
-            <div className="section-welcome__content__description">
+            <div className="welcome__content__description">
               <p>{description}</p>
             </div>
           </div>
