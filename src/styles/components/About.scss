@@ -2,17 +2,39 @@
 @import "../space-star";
 
 .about {
-  @include widthAndHeight(100%, 700px);
+  @include widthAndHeight(100%, 100%);
   background-color: $primary-color;
 
   &__content {
     @include flexible(flex, center, center, column, null);
     @include widthAndHeight(null, 100%);
+    padding: 3.5em 1em;
 
     &__title {
       margin: 0;
-      padding: 1em;
       color: $text-contrast;
+    }
+
+    &__description {
+      @include flexible(flex, center, null, null, wrap);
+      color: $text-contrast;
+      margin-bottom: 1em;
+
+      p {
+        color: inherit;
+        max-width: 316px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0.5em;
+      }
+    }
+
+    &--button {
+      text-decoration: none;
+      color: $text-contrast;
+      border: 1px solid $tertiary-color;
+      padding: 0.9em 1.5em;
+      border-radius: 4px;
     }
   }
 }

@@ -83,7 +83,6 @@ export const texts =
     },
     contact: {
       title: 'contact me',
-      form: ['Name', 'Email Address', 'Phone Number', 'Message']
     },
     footer: {
       location: 'location',

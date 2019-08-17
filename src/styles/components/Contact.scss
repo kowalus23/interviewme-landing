@@ -1,0 +1,36 @@
+@import "../variables";
+@import "../space-star";
+
+.contact {
+  @include widthAndHeight(100%, 100%);
+  background-color: $tertiary-color;
+
+  &__content {
+    @include flexible(flex, center, center, column, null);
+    @include widthAndHeight(null, 100%);
+    padding: 3.5em 1em;
+
+    &__title {
+      margin: 0;
+      color: $text-contrast;
+    }
+
+    .star-content {
+      &__star {
+        border-bottom: 0.7em solid $secondary-color;
+
+        &::before, &::after {
+          border-bottom: 0.7em solid $secondary-color;
+        }
+      }
+
+      &::after {
+        background-color: $secondary-color;
+      }
+
+      &::before {
+        background-color: $secondary-color;
+      }
+    }
+  }
+}

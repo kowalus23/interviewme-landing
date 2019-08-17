@@ -1,8 +1,14 @@
 import React from 'react';
+
+import {faDownload} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
+
 import '../../styles/components/About.scss'
 
 const About = ({info}) => {
   const {title, contentText, downloadFile} = info;
+  const text = contentText.map((text, i) => <p key={i}>{text}</p>);
+
   return (
     <>
       <section className="about">
@@ -15,11 +21,10 @@ const About = ({info}) => {
               <div className="star-content__star"/>
             </div>
             <div className="about__content__description">
-              <p></p>
-              <p></p>
+              {text}
             </div>
             <a className="about__content--button" href={downloadFile} download>
-              <i className="fas fa-download"></i> Download now!
+              <FontAwesomeIcon style={{marginRight: '6px'}} icon={faDownload}/>Download now!
             </a>
           </div>
         </div>
