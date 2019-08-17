@@ -24,7 +24,7 @@ const About = ({info}) => {
               {text}
             </div>
             <a className="about__content--button" href={downloadFile} download>
-              <FontAwesomeIcon style={{marginRight: '6px'}} icon={faDownload}/>Download now!
+              <FontAwesomeIcon style={{marginRight: '14px', fontSize: '0.8em'}} icon={faDownload}/>Download now!
             </a>
           </div>
         </div>

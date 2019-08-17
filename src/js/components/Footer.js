@@ -37,7 +37,7 @@ const Footer = ({info}) => {
             </div>
             <div className="footer__content__item">
               <h2>{info[2]}</h2>
-              <p>Freelance is a free to use, open source <br/> Bootstrap theme created by <a className="item-span" href="">Start Bootstrap.</a></p>
+              <p>Freelance is a free to use, open source <br/> Bootstrap theme created by <a className="item-span" href="https://nowhere.com">Start Bootstrap.</a></p>
             </div>
           </div>
         </div>

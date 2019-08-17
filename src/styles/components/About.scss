@@ -8,10 +8,11 @@
   &__content {
     @include flexible(flex, center, center, column, null);
     @include widthAndHeight(null, 100%);
-    padding: 3.5em 1em;
+    padding: 6em 0;
 
     &__title {
       margin: 0;
+      font-size: 4em;
       color: $text-contrast;
     }
 
@@ -22,7 +23,8 @@
 
       p {
         color: inherit;
-        max-width: 316px;
+        max-width: 440px;
+        font-size: 1.5em;
         line-height: 1.5;
         margin: 0;
         padding: 0.5em;
@@ -32,9 +34,16 @@
     &--button {
       text-decoration: none;
       color: $text-contrast;
-      border: 1px solid $tertiary-color;
+      border: 2px solid $tertiary-color;
       padding: 0.9em 1.5em;
       border-radius: 4px;
+      font-size: 1.5em;
+      transition: all 100ms ease-in-out;
+
+      &:hover {
+        color: $primary-color;
+        background-color: $tertiary-color;
+      }
     }
   }
 }

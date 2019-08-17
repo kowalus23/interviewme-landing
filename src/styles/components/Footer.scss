@@ -6,55 +6,91 @@
   background-color: $secondary-color;
 
   &__content {
-    @include flexible(flex, center, null, null, wrap);
+    @include flexible(flex, mull, null, null, wrap);
     @include widthAndHeight(null, 100%);
-    padding: 3.5em 1em;
+    padding: 6em 0;
 
     h2 {
       margin: 0 0 0.75em 0;
       text-transform: uppercase;
+      font-size: 1.75em;
     }
 
     p {
       margin: 0;
-      line-height:1.5;
+      line-height: 1.5;
+      font-size: 1.5em;
       font-weight: 500;
     }
 
     &__item {
+      @include widthAndHeight(100%, null);
+      max-width: 33.33%;
       color: $text-contrast;
-      width: 300px;
       text-align: center;
+      padding: 0.25em;
+
+      @media (max-width: 992px) {
+        max-width: 50%;
+        &:first-child {
+          margin-bottom: 3em;
+        }
+      }
+
+
+
+      @media (max-width: 576px) {
+        max-width: 100%;
+        &:first-child, &:first-child + & {
+          margin-bottom: 5em;
+        }
+      }
     }
 
     .icon-wrapper {
       @include flexible(flex, center, null, null, null);
 
       .icon {
-        @include widthAndHeight(40px, 40px);
+        @include widthAndHeight(60px, 60px);
         @include flexible(flex, center, center, null, null);
-        border: 1px solid white;
+        border: 2px solid white;
         border-radius: 50%;
         margin: 5px;
         text-decoration: none;
         color: $text-contrast;
+        transition: all 100ms ease-in-out;
+
+        svg {
+          font-size: 1.5em;
+        }
+
+        &:hover {
+          color: $primary-color;
+          border-color: $primary-color;
+        }
       }
     }
 
     a.item-span {
-          text-decoration: none;
-          color: $primary-color;
-        }
+      text-decoration: none;
+      color: $primary-color;
+      transition: color 100ms ease-in-out;
+
+      &:hover {
+        color: lighten($primary-color, 10%);
+      }
+    }
   }
 
   .copyrights {
-    @include widthAndHeight(100%, 50px);
+    @include widthAndHeight(100%, 80px);
     @include flexible(flex, center, center, null, null);
     color: $text-contrast;
     background-color: darken($secondary-color, 12%);
 
     small {
       opacity: 0.8;
+      font-weight: 500;
     }
   }
 }

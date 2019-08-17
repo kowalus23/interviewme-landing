@@ -50,10 +50,10 @@ const Footer = ({info}) => {
             </div>
             <form className="custom-form" action="/" onSubmit={handleSubmit}>
               <div className="custom-form__content">
-                <input name="name" type="text" placeholder="Name" onChange={handleOnChange}/>
-                <input name="email" type="email" placeholder="Email Address" onChange={handleOnChange}/>
-                <input name="phone" type="text" placeholder="Phone Number" onChange={handleOnChange}/>
-                <textarea name="message" placeholder="Message" rows={8} onChange={handleOnChange}/>
+                <input name="name" type="text" placeholder="Name" onChange={handleOnChange} required={true}/>
+                <input name="email" type="email" placeholder="Email Address" onChange={handleOnChange} required={true}/>
+                <input name="phone" type="tel" placeholder="Phone Number" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" onChange={handleOnChange} required={true}/>
+                <textarea name="message" placeholder="Message" rows={5} onChange={handleOnChange}/>
               </div>
               <input className="custom-from--button" type="submit" value="Send"/>
             </form>
