@@ -44,16 +44,18 @@ const Footer = ({info}) => {
       <section className="contact">
         <div className="container">
           <div className="contact__content">
-            <h2>{title}</h2>
+            <h2 className="contact__content__title">{title.toUpperCase()}</h2>
             <div className="star-content">
               <div className="star-content__star"/>
             </div>
-            <form action="/" onSubmit={handleSubmit}>
-              <input name="name" type="text" placeholder="Name" onChange={handleOnChange}/>
-              <input name="email" type="email" placeholder="Email Address" onChange={handleOnChange}/>
-              <input name="phone" type="text" placeholder="Phone Number" onChange={handleOnChange}/>
-              <textarea name="message" placeholder="Message" cols="30" rows="10" onChange={handleOnChange}/>
-              <input type="submit"/>
+            <form className="custom-form" action="/" onSubmit={handleSubmit}>
+              <div className="custom-form__content">
+                <input name="name" type="text" placeholder="Name" onChange={handleOnChange}/>
+                <input name="email" type="email" placeholder="Email Address" onChange={handleOnChange}/>
+                <input name="phone" type="text" placeholder="Phone Number" onChange={handleOnChange}/>
+                <textarea name="message" placeholder="Message" rows={8} onChange={handleOnChange}/>
+              </div>
+              <input className="custom-from--button" type="submit" value="Send"/>
             </form>
           </div>
         </div>

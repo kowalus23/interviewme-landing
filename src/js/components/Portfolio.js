@@ -18,7 +18,7 @@ const Portfolio = ({info}) => {
       <section className="portfolio">
         <div className="container">
           <div className="portfolio__content">
-            <h2 className="portfolio__content__title">{title}</h2>
+            <h2 className="portfolio__content__title">{title.toUpperCase()}</h2>
             <div className="star-content">
               <div className="star-content__star"/>
             </div>

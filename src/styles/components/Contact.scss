@@ -12,7 +12,7 @@
 
     &__title {
       margin: 0;
-      color: $text-contrast;
+      color: $secondary-color;
     }
 
     .star-content {
@@ -30,6 +30,41 @@
 
       &::before {
         background-color: $secondary-color;
+      }
+    }
+
+    .custom-form {
+      @include widthAndHeight(50%, 100%);
+
+      &__content {
+        @include flexible(flex, center, null, column, null);
+        margin-bottom: 1.5em;
+
+        input {
+          padding: 1.25em 0;
+          border: none;
+          border-bottom: 1px solid darken($tertiary-color, 5%);
+          outline: none; // bad for accessibility
+        }
+
+        textarea {
+          resize: none;
+          border: none;
+          padding: 1.25em 0;
+          border-bottom: 1px solid darken($tertiary-color, 5%);
+          outline: none; // bad for accessibility
+        }
+      }
+
+      .custom-from--button {
+        align-self: start;
+        color: $text-contrast;
+        background-color: $primary-color;
+        border: 1px solid darken($primary-color, 5%);
+        padding: 0.9em 1.5em;
+        border-radius: 4px;
+        cursor: pointer;
+        outline: none; // bad for accessibility
       }
     }
   }

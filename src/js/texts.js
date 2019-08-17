@@ -84,9 +84,5 @@ export const texts =
     contact: {
       title: 'contact me',
     },
-    footer: {
-      location: 'location',
-      social: 'around the web',
-      about: 'about freelancer'
-    }
+    footer: ['location', 'around the web', 'about freelancer']
   };

@@ -18,7 +18,7 @@
     &__description {
       @include flexible(flex, center, null, null, wrap);
       color: $text-contrast;
-      margin-bottom: 1em;
+      margin-bottom: 1.5em;
 
       p {
         color: inherit;
