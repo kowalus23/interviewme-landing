@@ -4,7 +4,7 @@ import '../../styles/components/Navigation.scss'
 const Navigation = ({info}) => {
   const {title, sections} = info;
   const section = sections.map(section => {
-    return <li key={section}>{section}</li>
+    return <li key={section}>{section.toUpperCase()}</li>
   });
 
   return (

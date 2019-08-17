@@ -2,12 +2,24 @@
 
 
 .footer {
-  @include widthAndHeight(100%, 260px);
+  @include widthAndHeight(100%, 100%);
   background-color: $secondary-color;
 
   &__content {
-    @include flexible(flex, center, center, null, wrap);
+    @include flexible(flex, center, null, null, wrap);
     @include widthAndHeight(null, 100%);
+    padding: 3.5em 1em;
+
+    h2 {
+      margin: 0 0 0.75em 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin: 0;
+      line-height:1.5;
+      font-weight: 500;
+    }
 
     &__item {
       color: $text-contrast;
@@ -16,14 +28,16 @@
     }
 
     .icon-wrapper {
-      display: flex;
+      @include flexible(flex, center, null, null, null);
 
       .icon {
-        width: 40px;
-        height: 40px;
+        @include widthAndHeight(40px, 40px);
+        @include flexible(flex, center, center, null, null);
         border: 1px solid white;
         border-radius: 50%;
         margin: 5px;
+        text-decoration: none;
+        color: $text-contrast;
       }
     }
 
@@ -37,6 +51,10 @@
     @include widthAndHeight(100%, 50px);
     @include flexible(flex, center, center, null, null);
     color: $text-contrast;
-    background-color: darken($secondary-color, 15%);
+    background-color: darken($secondary-color, 12%);
+
+    small {
+      opacity: 0.8;
+    }
   }
 }

@@ -6,10 +6,11 @@
 
   &__content {
     @include flexible(flex, space-between, center, null, null);
+    padding: 1.5em 1em;
 
     &__title {
       margin: auto 0;
-      padding: 1em;
+      font-size: 2em;
       color: $text-contrast;
     }
 
@@ -20,6 +21,15 @@
 
       li {
         padding: 0.5em 1em;
+        font-weight: 700;
+        font-size: 1.1em;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: color 100ms ease-in-out;
+
+        &:hover {
+          color: $primary-color;
+        }
       }
     }
   }

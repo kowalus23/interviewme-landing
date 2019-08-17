@@ -2,22 +2,26 @@
 @import "../space-star";
 
 .welcome {
-  @include widthAndHeight(100%, 700px);
+  @include widthAndHeight(100%, 100%);
   background-color: $primary-color;
 
   &__content {
     @include flexible(flex, center, center, column, null);
     @include widthAndHeight(null, 100%);
+    padding: 6em 1em;
 
     &__avatar {
-      @include widthAndHeight(200px, 200px);
+      @include widthAndHeight(280px, 280px);
+      @include flexible(flex, center, center, null, null);
       background-color: $secondary-color;
       border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 2em;
     }
 
     &__title {
       margin: 0;
-      padding: 1em;
+      font-size: 5em;
       color: $text-contrast;
     }
 
@@ -25,7 +29,8 @@
       @include flexible(flex, null, null, null, null);
 
       p {
-        padding: 1em;
+        font-size: 2em;
+        margin: 0;
         color: $text-contrast
       }
     }

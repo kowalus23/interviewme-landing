@@ -8,6 +8,7 @@
   &__content {
     @include flexible(flex, center, center, column, null);
     @include widthAndHeight(null, 100%);
+    padding: 6em 0;
 
     .star-content {
       &__star {
@@ -29,7 +30,7 @@
 
     &__title {
       margin: 0;
-      padding: 1em;
+      font-size: 4em;
       color: $secondary-color;
     }
 
@@ -37,14 +38,31 @@
       @include widthAndHeight(100%, 100%);
       @include flexible(flex, center, null, row, wrap);
 
-      .card {
-        @include widthAndHeight(300px, 200px);
-        @include flexible(flex, center, center, null, null);
-        margin: 1em;
+      a {
+        max-width: 33.33%;
+        width: 100%;
+        padding: 1em;
 
-        img {
-          @include widthAndHeight(100px, 100px);
-          border-radius: 50%;
+        @media (max-width: 992px) {
+          max-width: 50%;
+        }
+
+        @media (max-width: 768px) {
+          max-width: 75%;
+        }
+
+        @media (max-width: 576px) {
+          max-width: 100%;
+        }
+
+        .card {
+          @include widthAndHeight(100%, 300px);
+          @include flexible(flex, center, center, null, null);
+
+          img {
+            @include widthAndHeight(250px, 250px);
+            border-radius: 50%;
+          }
         }
       }
     }

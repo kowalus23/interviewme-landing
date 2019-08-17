@@ -44,20 +44,20 @@
   &::after {
     content: '';
     position: absolute;
-    top: calc(50% - 3px);
-    right: -180px;
-    width: 160px;
-    height: 6px;
+    top: calc(50% - 2px);
+    right: -130px;
+    width: 110px;
+    height: 5px;
     background-color: $text-contrast;
   }
 
   &::before {
     content: '';
     position: absolute;
-    top: calc(50% - 3px);
-    left: -180px;
-    width: 160px;
-    height: 6px;
+    top: calc(50% - 2px);
+    left: -130px;
+    width: 110px;
+    height: 5px;
     background-color: $text-contrast;
   }
 }

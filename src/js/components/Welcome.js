@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../styles/components/Welcome.scss';
+import placeholderImg from '../../assets/placeholder.png';
+
 
 const Welcome = ({info}) => {
   const {title, additional} = info;
@@ -10,7 +12,9 @@ const Welcome = ({info}) => {
       <section className="welcome">
         <div className="container">
           <div className="welcome__content">
-            <div className="welcome__content__avatar"/>
+            <div className="welcome__content__avatar">
+              <img src={placeholderImg} alt="avatar"/>
+            </div>
             <h1 className="welcome__content__title">
               {title.toUpperCase()}
             </h1>
