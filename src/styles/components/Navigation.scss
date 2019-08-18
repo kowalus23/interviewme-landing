@@ -11,16 +11,14 @@
 
   &__content {
     @include flexible(flex, space-between, center, null, null);
-    padding: 1.5em 1em;
+    padding: 1.7em 1em;
 
     &__title {
-      margin: auto 0;
       font-size: 2em;
       color: $text-contrast;
 
       @media(max-width: 768px) {
         font-size: 1.65em;
-        margin: 0;
       }
 
       @media(max-width: 356px) {

@@ -7,6 +7,7 @@ import Contact from "./Contact";
 import Footer from "./Footer";
 import {texts} from "../texts";
 
+import '../../styles/reset.scss';
 import '../../styles/components/App.scss';
 
 const App = () => {
