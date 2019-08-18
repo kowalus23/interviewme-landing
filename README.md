@@ -1,6 +1,6 @@
 Project made as an exercise of making landing-page direct from PDF.
 
-Live view: `https://interviewme-landing.herokuapp.com/` since it's heroku he likes to go to sleep from time to time...
+[ LIVE VIEW ](https://interviewme-landing.herokuapp.com/) since it's heroku he likes to go to sleep from time to time...
 
 For better UX, its good to add:
 - smooth scroll
