@@ -2,7 +2,6 @@ import React from 'react';
 import '../../styles/components/Welcome.scss';
 import placeholderImg from '../../assets/placeholder.png';
 
-
 const Welcome = ({info}) => {
   const {title, additional} = info;
   const description = additional.join(' - ');

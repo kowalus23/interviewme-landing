@@ -13,14 +13,14 @@ const App = () => {
   const {navigation, welcome, portfolio, about, contact, footer} = texts;
 
   return (
-    <div>
+    <React.Fragment>
         <Navigation info={navigation}/>
         <Welcome info={welcome}/>
         <Portfolio info={portfolio}/>
         <About info={about}/>
         <Contact info={contact}/>
         <Footer info={footer}/>
-    </div>
+    </React.Fragment>
   );
 };
 
