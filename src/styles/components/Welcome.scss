@@ -10,6 +10,10 @@
     @include widthAndHeight(null, 100%);
     padding: 6em 1em;
 
+    @media(max-width: 768px) {
+      margin-top: 130px;
+    }
+
     &__avatar {
       @include widthAndHeight(280px, 280px);
       @include flexible(flex, center, center, null, null);
@@ -21,8 +25,12 @@
 
     &__title {
       margin: 0;
-      font-size: 5em;
+      font-size: 4.8em;
       color: $text-contrast;
+
+      @media(max-width: 768px) {
+        font-size: 3em;
+      }
     }
 
     &__description {
@@ -31,7 +39,11 @@
       p {
         font-size: 2em;
         margin: 0;
-        color: $text-contrast
+        color: $text-contrast;
+
+        @media(max-width: 768px) {
+          font-size: 1.5em;
+        }
       }
     }
   }
