@@ -3,19 +3,19 @@ import '../../styles/components/Contact.scss'
 
 const Footer = ({info}) => {
   const {title} = info;
-  const [name, setName] = useState({});
-  const [email, setEmail] = useState({});
-  const [phone, setPhone] = useState({});
-  const [message, setMessage] = useState({});
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [phone, setPhone] = useState('');
+  const [message, setMessage] = useState('');
 
   const handleOnChange = ({target}) => {
-    if (target.getAttribute('name') === 'name') {
+    if (target.name === 'name') {
       setName(target.value);
-    } else if (target.getAttribute('name') === 'email') {
+    } else if (target.name === 'email') {
       setEmail(target.value);
-    } else if (target.getAttribute('name') === 'phone') {
+    } else if (target.name === 'phone') {
       setPhone(target.value);
-    } else if (target.getAttribute('name') === 'message') {
+    } else if (target.name === 'message') {
       setMessage(target.value);
     }
   };
