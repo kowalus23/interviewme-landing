@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e1de234a.chunk.css",
+    "main.js": "/static/js/main.c45b58fd.chunk.js",
+    "main.js.map": "/static/js/main.c45b58fd.chunk.js.map",
+    "runtime~main.js": "/static/js/runtime~main.4304f76a.js",
+    "runtime~main.js.map": "/static/js/runtime~main.4304f76a.js.map",
+    "static/js/2.9f9aeec6.chunk.js": "/static/js/2.9f9aeec6.chunk.js",
+    "static/js/2.9f9aeec6.chunk.js.map": "/static/js/2.9f9aeec6.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.506e08131c63b264804e9dd41a37d31a.js": "/precache-manifest.506e08131c63b264804e9dd41a37d31a.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e1de234a.chunk.css.map": "/static/css/main.e1de234a.chunk.css.map",
+    "static/media/cake.svg": "/static/media/cake.89cafa12.svg",
+    "static/media/fishing-boat.svg": "/static/media/fishing-boat.be2c178d.svg",
+    "static/media/forest.svg": "/static/media/forest.c071b35a.svg",
+    "static/media/game-controller.svg": "/static/media/game-controller.2bacd99d.svg",
+    "static/media/money-box.svg": "/static/media/money-box.36acd45f.svg",
+    "static/media/placeholder.png": "/static/media/placeholder.a325dad9.png",
+    "static/media/tent.svg": "/static/media/tent.19fb7eaf.svg"
+  }
+}
