@@ -6,6 +6,10 @@
   max-width: 1240px;
   overflow: hidden;
 
+  .mob-center {
+    text-align: center;
+  }
+
   @media (max-width: 1300px) {
     max-width: 1240px;
   }

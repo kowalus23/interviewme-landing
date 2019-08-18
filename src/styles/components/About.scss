@@ -14,6 +14,10 @@
       margin: 0;
       font-size: 4em;
       color: $text-contrast;
+
+      @media (max-width: 576px) {
+        font-size: 3.5em;
+      }
     }
 
     &__description {
@@ -28,6 +32,10 @@
         line-height: 1.5;
         margin: 0;
         padding: 0.5em;
+
+        @media (max-width: 576px) {
+          font-size: 1.3em;
+        }
       }
     }
 
@@ -43,6 +51,10 @@
       &:hover {
         color: $primary-color;
         background-color: $tertiary-color;
+      }
+
+      &:active {
+        background-color: darken($tertiary-color, 8%);
       }
     }
   }

@@ -7,7 +7,9 @@ const Portfolio = ({info}) => {
     return (
       <a href={redirect} key={id} data-title={title}>
         <div className="card" style={temporaryStyle}>
-          <img src={img.src} alt={img.src} style={img.tempStyle}/>
+          <div className="img-wrapper" style={img.tempStyle}>
+            <img src={img.src} alt={title} />
+          </div>
         </div>
       </a>
     )

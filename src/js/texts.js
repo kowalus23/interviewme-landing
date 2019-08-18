@@ -1,3 +1,11 @@
+import cake from '../assets/cake.svg';
+import boat from '../assets/fishing-boat.svg';
+import forest from '../assets/forest.svg';
+import gamepad from '../assets/game-controller.svg';
+import safe from '../assets/money-box.svg';
+import tent from '../assets/tent.svg';
+
+
 export const texts =
   {
     navigation: {
@@ -15,7 +23,7 @@ export const texts =
           id: 1,
           title: 'project1',
           img: {
-            src: 'SRC',
+            src: forest,
             tempStyle: {backgroundColor: 'rgb(69, 178, 155)'}
           },
           redirect: 'URL',
@@ -25,7 +33,7 @@ export const texts =
           id: 2,
           title: 'project2',
           img: {
-            src: 'SRC',
+            src: cake,
             tempStyle: {backgroundColor: 'rgb(224, 91, 74)'}
           },
           redirect: 'URL',
@@ -35,7 +43,7 @@ export const texts =
           id: 3,
           title: 'project3',
           img: {
-            src: 'SRC',
+            src: tent,
             tempStyle: {backgroundColor: 'rgb(236, 240, 241)'}
           },
           redirect: 'URL',
@@ -45,7 +53,7 @@ export const texts =
           id: 4,
           title: 'project4',
           img: {
-            src: 'SRC',
+            src: gamepad,
             tempStyle: {backgroundColor: 'rgb(225, 124, 62)'}
           },
           redirect: 'URL',
@@ -55,7 +63,7 @@ export const texts =
           id: 5,
           title: 'project5',
           img: {
-            src: 'SRC',
+            src: safe,
             tempStyle: {backgroundColor: 'rgb(238, 200, 73)'}
           },
           redirect: 'URL',
@@ -65,7 +73,7 @@ export const texts =
           id: 6,
           title: 'project6',
           img: {
-            src: 'SRC',
+            src: boat,
             tempStyle: {backgroundColor: 'rgb(51, 71, 92)'}
           },
           redirect: 'URL',

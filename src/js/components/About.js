@@ -7,7 +7,7 @@ import '../../styles/components/About.scss'
 
 const About = ({info}) => {
   const {title, contentText, downloadFile} = info;
-  const text = contentText.map((text, i) => <p key={i}>{text}</p>);
+  const text = contentText.map((text, i) => <p className="mob-center" key={i}>{text}</p>);
 
   return (
     <>

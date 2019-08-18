@@ -32,6 +32,10 @@
       margin: 0;
       font-size: 4em;
       color: $secondary-color;
+
+      @media (max-width: 576px) {
+        font-size: 3.5em;
+      }
     }
 
     &__card-wrapper {
@@ -58,10 +62,21 @@
         .card {
           @include widthAndHeight(100%, 300px);
           @include flexible(flex, center, center, null, null);
+          transition: transform 200ms ease-in-out;
 
-          img {
+          .img-wrapper {
             @include widthAndHeight(250px, 250px);
+            @include flexible(flex, center, center, null, null);
             border-radius: 50%;
+            overflow: hidden;
+
+            img {
+              width: 60%
+            }
+          }
+
+          &:hover {
+            transform: translateY(-4px);
           }
         }
       }

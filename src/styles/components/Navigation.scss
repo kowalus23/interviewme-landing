@@ -22,6 +22,11 @@
         font-size: 1.6em;
         margin: 0;
       }
+
+      @media(max-width: 348px) {
+        font-size: 1.4em;
+        padding: 2px 0;
+      }
     }
 
     &__sections {
@@ -41,8 +46,17 @@
         cursor: pointer;
         transition: color 100ms ease-in-out;
 
+        a {
+          text-decoration: none;
+          color: inherit;
+        }
+
         &:hover {
           color: $primary-color;
+        }
+
+        &:active {
+          color: darken($primary-color, 10%)
         }
       }
     }
@@ -54,13 +68,12 @@
       }
 
       &--toggle {
+        @include widthAndHeight(50px, 50px);
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 9px;
+        right: 9px;
         z-index: 10;
         cursor: pointer;
-        width: 50px;
-        height: 50px;
         opacity: 0;
 
         &:checked + .navigation__content__menu--hamburger > div {
@@ -76,16 +89,31 @@
         &:checked:hover + .navigation__content__menu--hamburger > div {
           transform: rotate(225deg);
         }
+
+        &:checked ~ .navigation__content__menu--overlay {
+          visibility: visible;
+
+          & > div {
+            @include widthAndHeight(null, 100%);
+            transform: scale(1);
+            border-radius: 0;
+            transition-duration: 500ms;
+
+            & > div {
+              opacity: 1;
+              transition: opacity 300ms ease;
+            }
+          }
+        }
       }
 
       &--hamburger {
         position: absolute;
-        top: 0;
-        right: 0;
+        top: 9px;
+        right: 9px;
         @include flexible(flex, center, center, null, null);
+        @include widthAndHeight(60px, 60px);
         z-index: 8;
-        width: 60px;
-        height: 60px;
         padding: 1rem;
         background-color: $primary-color;
         border-radius: 50%;
@@ -118,18 +146,17 @@
         @include flexible(flex, center, center, null, null);
         top: 0;
         left: 0;
+        z-index: -1;
         visibility: hidden;
         overflow: hidden;
 
         & > div {
-          background-color: rgba(48, 61, 79, 0.9);
+          @include widthAndHeight(200vw, 200vw);
+          @include flexible(flex, center, center, null, null);
+          background-color: $secondary-color;
+          opacity: 0.95;
           border-radius: 50%;
-          width: 200vw;
-          height: 200vw;
-          display: flex;
           flex: none;
-          align-items: center;
-          justify-content: center;
           transform: scale(0);
           transition: all 300ms ease;
 
@@ -140,16 +167,25 @@
             opacity: 0;
             transition: opacity 300ms ease;
 
-            & > ul > li {
-              list-style: none;
-              color: $primary-color;
-              font-size: 1.5rem;
-              padding: 1rem;
+            & > ul {
+              padding: 0;
 
-              & > a {
-                color: inherit;
-                text-decoration: none;
-                transition: color 300ms ease;
+              li {
+                list-style: none;
+                color: $primary-color;
+                font-size: 1.75rem;
+                font-weight: 700;
+                padding: 1rem;
+
+                @media(min-width: 576px) {
+                  font-size: 2.5rem;
+                }
+
+                & > a {
+                  color: inherit;
+                  text-decoration: none;
+                  transition: color 300ms ease;
+                }
               }
             }
           }
