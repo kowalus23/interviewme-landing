@@ -27,7 +27,7 @@ export const texts =
             tempStyle: {backgroundColor: 'rgb(69, 178, 155)'}
           },
           redirect: 'URL',
-          temporaryStyle: {backgroundColor: 'rgb(186, 31, 19)'}
+          temporaryStyle: {backgroundColor: 'rgb(191, 72, 93)'}
         },
         {
           id: 2,
