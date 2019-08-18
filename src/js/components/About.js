@@ -11,7 +11,7 @@ const About = ({info}) => {
 
   return (
     <>
-      <section className="about">
+      <section id="About" className="about">
         <div className="container">
           <div className="about__content">
             <h2 className="about__content__title">

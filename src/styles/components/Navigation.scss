@@ -19,11 +19,11 @@
       color: $text-contrast;
 
       @media(max-width: 768px) {
-        font-size: 1.6em;
+        font-size: 1.65em;
         margin: 0;
       }
 
-      @media(max-width: 348px) {
+      @media(max-width: 356px) {
         font-size: 1.4em;
         padding: 2px 0;
       }
@@ -70,8 +70,8 @@
       &--toggle {
         @include widthAndHeight(50px, 50px);
         position: absolute;
-        top: 9px;
-        right: 9px;
+        top: 10px;
+        right: 10px;
         z-index: 10;
         cursor: pointer;
         opacity: 0;
@@ -109,8 +109,8 @@
 
       &--hamburger {
         position: absolute;
-        top: 9px;
-        right: 9px;
+        top: 10px;
+        right: 10px;
         @include flexible(flex, center, center, null, null);
         @include widthAndHeight(60px, 60px);
         z-index: 8;

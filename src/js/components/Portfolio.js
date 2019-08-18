@@ -17,7 +17,7 @@ const Portfolio = ({info}) => {
 
   return (
     <>
-      <section className="portfolio">
+      <section id="Portfolio" className="portfolio">
         <div className="container">
           <div className="portfolio__content">
             <h2 className="portfolio__content__title">{title.toUpperCase()}</h2>

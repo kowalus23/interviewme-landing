@@ -41,7 +41,7 @@ const Footer = ({info}) => {
 
   return (
     <>
-      <section className="contact">
+      <section id="Contact" className="contact">
         <div className="container">
           <div className="contact__content">
             <h2 className="contact__content__title mob-center">{title.toUpperCase()}</h2>

@@ -57,7 +57,7 @@
         color: $text-contrast;
         transition: all 100ms ease-in-out;
 
-        @media (max-width: 576px) {
+        @media (max-width: 768px) {
           @include widthAndHeight(50px, 50px);
         }
 
